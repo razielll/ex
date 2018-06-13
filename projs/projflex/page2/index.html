@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page2</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="menu-cart">
+            <span class="fa fa-shopping-cart" onclick="showMenu()"></span>
+        </div>
+    </div>
+
+        <ul class="menu">
+            <li>menu item 1 &nbsp;</li>
+            <li>menu item 2 &nbsp;</li>
+            <li>menu item 3 &nbsp;</li>
+            <li>menu item 4 &nbsp;</li>
+            <li class="summary">-</li>
+        </ul>
+
+
+    <script>
+        function showMenu() {    
+            document.querySelector('.menu').classList.toggle('show-menu');
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+.input-field {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    margin: auto;
+    opacity: 0 auto;
+    transition: all .8s;
+    transform: translate(-1150px, 0);
+}
+
+.show-input {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.rate {
+    cursor: pointer;
+    display: table;
+    padding: 2px;
+    width: 35%;
+}
+
+.rateUp,
+.rateDown {
+    display: table-cell;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,90 @@
+@import 'header.css';
+@import 'footer.css';
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 98%;
+    width: 98%;
+}
+
+.flex-container {
+    text-align: center;
+    height: 80%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+.l-side1 {
+    height: 68%;
+    width: 23%;
+    background-color: aquamarine;
+}
+
+.l-side2 {
+    height: 29%;
+    width: 23%;
+    background-color: blueviolet;
+}
+
+.main {
+    height: 100%;
+    width: 70%;
+    background-color: burlywood;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-flow: column-reverse;
+        justify-content: space-around;
+    }
+    .flex-container>* {
+        width: 100%;
+        height: 32.3%;
+    }
+}
+
+@media (min-width:768px) {
+    .flex-container {
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap-reverse;
+    }
+    .flex-container>.main {
+        height: 70%;
+        width: 100%;
+    }
+    .flex-container>.l-side1 {
+        height: 29%;
+        width: 35%;
+    }
+    .flex-container>.l-side2 {
+        height: 29%;
+        width: 64%;
+    }
+}
+
+@media (min-width: 992px) {
+    .flex-container {
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .flex-container>.main {
+        height: 100%;
+        width: 75%;
+    }
+    .flex-container>.l-side1 {
+        height: 70%;
+        width: 25%;
+        background-color: aquamarine;
+    }
+    .flex-container>.l-side2 {
+        height: 30%;
+        width: 25%;
+    }
+}

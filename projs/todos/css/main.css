@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(17, 128, 128);
+  max-width: 900px;
+}
+
+.todos {
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.todo {
+  cursor: pointer;
+  padding: 10px 0;
+  border-bottom: 1px solid gainsboro;
+  font-size: 1.5em;
+  color: whitesmoke;
+}
+
+.todo.done {
+  text-decoration: line-through;
+}
+
+
+.btns { 
+  display:flex;
+}
+
+.btn {
+  cursor: pointer;
+  color: teal;
+  background-color: aquamarine;
+  border: 0;
+  border-radius: 4px;
+  height: 25px;
+  width: 25px;
+  margin:5px;
+}
+
+.btn:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.btn-danger {
+  margin-left: 4px;
+  background-color: hotpink;
+}
+
+.noTodo {
+  font-size: 1.5em;
+  padding: 5px;
+  color: white;
+  text-shadow: 2px 2px 5px #FF0000, 2px 2px 10px #0000FF;
+}
+
+.items-left {
+  float: left;
+  color: white;
+  padding: 5px;
+  margin: 20px 10px;
+}
+
+.selector {
+  cursor: pointer;
+  float: right;
+  color: white;
+  background-color: transparent;
+  border: 1px solid cadetblue;
+  border-radius: 2px;
+  margin: 20px 10px;
+  padding: 5px;
+}
+
+.selector:hover {
+  color: white;
+  background-color: cadetblue;
+}
+
+.todo {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .todos {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+  .arrw {
+    display: none;
+  }
+  .todo {
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 45%;
+    margin: 20px;
+    border: 1px solid white;
+    border-radius: 2px;
+  }
+}
